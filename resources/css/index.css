@@ -83,7 +83,6 @@ h2:after {
     line-height: 145%;
     width: 70%;
     margin-left: 15%;
-    margin-bottom: 1%;
 }
 
 .box p {
@@ -195,3 +194,50 @@ header {
     border-bottom: 2px solid #e67e22;
 }
 
+/* ----------------------------------- */
+/* FEATURES */
+/* ----------------------------------- */
+
+.section-features .long-copy {
+    margin-bottom: 3%;
+}
+
+/* ----------------------------------- */
+/* MEALS */
+/* ----------------------------------- */
+
+.section-meals {
+    padding: 0;
+}
+
+.meals-showcase {
+    list-style: none;
+    width: 100%;
+}
+
+.meals-showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.meal-photo {
+    width: 100%; /*defining width 100% because it should occupy the 100% of the 25% width given to the li element*/
+    margin: 0; /*we already set the margin to 0 initially for elements they why again, coz the normalize.css defines some margin for elements so we need to overwrite it*/
+    overflow: hidden;
+    background-color: black;
+}
+
+.meal-photo img {
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.meal-photo img:hover {
+    opacity: 1;
+    transform: scale(1.03);
+
+}
