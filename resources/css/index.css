@@ -18,6 +18,15 @@ html {
     text-rendering: optimizeLegibility;
 }
 
+.clearfix {zoom: 1}
+.clearfix::after{
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
 /* ----------------------------------- */
 /* REUSABLE COMPONENTS */
 /* ----------------------------------- */
@@ -98,6 +107,38 @@ h2:after {
     color: #e67e22;
     margin-bottom: 15px;
 }
+
+.icon-small {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: #e67e22;
+    font-size: 120%;
+    margin-right: 10px;
+
+    /*secrets to align text and icons*/
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -5px;
+}
+
+/*-------LINKS-------*/
+
+a:link,
+a:visited {
+    color: #e67e22;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #e67e22;
+    transition: color 0.2s, border-bottom 0.2s;
+}
+
+a:hover,
+a:active {
+    color: rgb(51, 51, 51);
+    border-bottom: 1px solid transparent;
+}
+
 
 /*-------BUTTONS-------*/
 
@@ -240,4 +281,80 @@ header {
     opacity: 1;
     transform: scale(1.03);
 
+}
+
+
+/* ----------------------------------- */
+/* HOW IT WORKS */
+/* ----------------------------------- */
+
+/* .steps-box {
+    
+} */
+
+.section-steps {
+    background-color: rgb(242, 242, 242);
+}
+
+.steps-box:first-child {
+    text-align: right; /*although we dont have any text in this div the text align property works on all inline and inline-block elements*/
+    padding-right: 3%;
+    margin-top: 30px;
+}
+
+.steps-box:last-child {
+    padding-left: 3%;
+    margin-top: 70px;
+}
+
+.app-screen {
+    width: 40%;
+}
+
+.works-step {
+    margin-bottom: 50px;
+}
+
+.works-step:last-of-type {
+    margin-bottom: 80px;
+}
+
+.works-step div {
+    color: #e67e22;
+    border: 2px solid #e67e22;
+    display: block;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    padding: 5px;
+    float: left; /*taking the float as left will change the display type to block even if it has been declared as inline-block*/
+    font-size: 150%;
+    margin-right: 25px;
+}
+
+.btn-app:link,
+.btn-app:visited {
+    border: 0;
+}
+
+.btn-app img {
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+}
+
+
+/* ----------------------------------- */
+/* CITIES */
+/* ----------------------------------- */
+
+.box img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.city-feature {
+    margin-bottom: 5px;
 }
