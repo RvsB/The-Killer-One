@@ -9,13 +9,15 @@
     box-sizing: border-box;
 }
 
-html {
+html, 
+body {
     background-color: #fff;
     color: rgb(51, 51, 51);
     font-family: 'Lato', 'Arial', sans-serif;
     font-weight: 300;
     font-size: 20px;
     text-rendering: optimizeLegibility;
+    overflow-x: hidden;
 }
 
 .clearfix {zoom: 1}
@@ -294,9 +296,9 @@ header {
 /* HOW IT WORKS */
 /* ----------------------------------- */
 
-/* .steps-box {
-    
-} */
+.steps-box {
+    margin-top: 30px;
+}
 
 .section-steps {
     background-color: rgb(242, 242, 242);
@@ -305,7 +307,6 @@ header {
 .steps-box:first-child {
     text-align: right; /*although we dont have any text in this div the text align property works on all inline and inline-block elements*/
     padding-right: 3%;
-    margin-top: 30px;
 }
 
 .steps-box:last-child {
