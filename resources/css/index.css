@@ -420,7 +420,7 @@ header {
 /* ----------------------------------- */
 
 .section-testimonials {
-    background-image:linear-gradient(rgba(0, 0, 0, 0.802), rgba(0, 0, 0, 0.802)), url(../css/images/back-customers.jpg);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.802), rgba(0, 0, 0, 0.802)), url(./images/back-customers.jpg);
     background-size: cover;
     color: white;
     background-attachment: fixed;
