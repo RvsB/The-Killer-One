@@ -88,10 +88,11 @@ $(document).ready(function() {
         var nav = $('.js--main-nav');
 
         nav.slideToggle(200);
-        if ($('.js--nav-icon ion-icon[name*="menu-outline"]')) {
+
+        if ($('.js--nav-icon ion-icon[name="menu-outline"]')) {
             $('.js--nav-icon ion-icon').attr("name", "close-outline");
         } 
-        else {
+        else if ('.js--nav-icon ion-icon[name!="menu-outline"]'){
             $('.js--nav-icon ion-icon').attr("name", "menu-outline");
         }
     });
